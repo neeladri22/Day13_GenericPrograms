@@ -15,6 +15,7 @@ namespace Day13_GenericPrograms
             int secondValue = int.Parse(Console.ReadLine());
             int thirdValue = int.Parse(Console.ReadLine());
             UC1_MaxIntgerNumbers.MaxInteger(firstValue, secondValue, thirdValue);
+
         }
     }
 }

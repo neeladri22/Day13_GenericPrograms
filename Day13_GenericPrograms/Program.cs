@@ -10,15 +10,16 @@ namespace Day13_GenericPrograms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter Length of Array number");
-            int length = int.Parse(Console.ReadLine());
-            int[] arr = new int[length];
+            Console.WriteLine("Enter Length of Array");
+            int len = int.Parse(Console.ReadLine());
+            int[] arr = new int[len];
             for (int i = 0; i < arr.Length; i++)
             {
                 arr[i] = int.Parse(Console.ReadLine());
             }
 
-            UC4_MaxMethod.MaxMethod(arr);
+            MaxGeneric<int> max = new MaxGeneric<int>(arr);
+            max.MaxValue();
         }
     }
 }

@@ -10,16 +10,17 @@ namespace Day13_GenericPrograms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter Length of Array");
-            int len = int.Parse(Console.ReadLine());
-            int[] arr = new int[len];
-            for (int i = 0; i < arr.Length; i++)
-            {
-                arr[i] = int.Parse(Console.ReadLine());
-            }
+            Refactor1<int> refactorint = new Refactor1<int>();
+            int max1 = refactorint.MaxValue(40, 50, 60);
+            Console.WriteLine("Maximum value of int is: " + max1);
 
-            MaxGeneric<int> max = new MaxGeneric<int>(arr);
-            max.MaxValue();
+            Refactor1<double> refactorfloat = new Refactor1<double>();
+            double max2 = refactorfloat.MaxValue(10.5, 20.5, 30.5);
+            Console.WriteLine("Maximum value of float is: " + max2);
+
+            Refactor1<string> refactorstring = new Refactor1<string>();
+            string max3 = refactorstring.MaxValue("neelu", "varsh", "ashok");
+            Console.WriteLine("Maximum value of string is: " + max3);
         }
     }
 }

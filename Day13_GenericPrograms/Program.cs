@@ -10,11 +10,11 @@ namespace Day13_GenericPrograms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter 3 Floats Value");
-            double first = double.Parse(Console.ReadLine());
-            double second = double.Parse(Console.ReadLine());
-            double third = double.Parse(Console.ReadLine());
-            UC2_FloatValues.MaxFloatNumber(first, second, third);
+            Console.WriteLine("Enter 3 string Values");
+            string first = Console.ReadLine();
+            string second = Console.ReadLine();
+            string third = Console.ReadLine();
+            UC3_MaxString.MaxStringValues(first,second,third);
         }
     }
 }

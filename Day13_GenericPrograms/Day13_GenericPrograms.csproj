@@ -48,6 +48,7 @@
     <Compile Include="UC1_MaxIntgerNumbers.cs" />
     <Compile Include="UC2_FloatValues.cs" />
     <Compile Include="UC3_MaxString.cs" />
+    <Compile Include="UC4_MaxMethod.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

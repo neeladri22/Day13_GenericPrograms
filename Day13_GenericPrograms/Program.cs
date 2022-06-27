@@ -10,11 +10,15 @@ namespace Day13_GenericPrograms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter 3 string Values");
-            string first = Console.ReadLine();
-            string second = Console.ReadLine();
-            string third = Console.ReadLine();
-            UC3_MaxString.MaxStringValues(first,second,third);
+            Console.WriteLine("Enter Length of Array number");
+            int length = int.Parse(Console.ReadLine());
+            int[] arr = new int[length];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i] = int.Parse(Console.ReadLine());
+            }
+
+            UC4_MaxMethod.MaxMethod(arr);
         }
     }
 }
